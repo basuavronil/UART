@@ -1,0 +1,35 @@
+module uart_top (
+    input        clk,
+    input        rst,
+    input        tx_start,
+    input  [7:0] tx_data,
+    output [7:0] rx_data,
+    output       rx_done,
+    output       tx_line
+);
+
+    wire tx_busy;
+    wire rx_line;
+
+    
+    uart uart_transmitter (
+        .clk(clk),
+        .rst(rst),
+        .tx_start(tx_start),
+        .tx_data(tx_data),
+        .tx(tx_line),
+        .tx_busy(tx_busy)
+    );
+
+ 
+    assign rx_line = tx_line;
+    
+    uart_rx uart_receiver (
+        .clk(clk),
+        .rst(rst),
+        .rx(rx_line),
+        .rx_data(rx_data),
+        .rx_done(rx_done)
+    );
+
+endmodule
