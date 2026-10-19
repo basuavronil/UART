@@ -1,5 +1,8 @@
 <img width="1364" height="859" alt="image" src="https://github.com/user-attachments/assets/d032220f-a03a-48eb-8ef1-97acace563d7" />
 
+<img width="650" height="365" alt="image" src="https://github.com/user-attachments/assets/62a87226-83e5-4ea0-9f90-8397b688c720" />
+
+
 # UART Timing Diagram: 8N1 Frame (byte `0x41`)
 
 This document explains, cycle by cycle, the UART transmit and receive waveform for a single byte (`0x41`, ASCII `'A'`) sent with the **8N1** format: 8 data bits, no parity, 1 stop bit.
