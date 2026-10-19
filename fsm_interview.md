@@ -4,6 +4,10 @@ This repository contains the RTL implementation, finite state machine (FSM) desi
 
 ---
 
+<img width="438" height="322" alt="image" src="https://github.com/user-attachments/assets/3b8d0c00-d2c6-4299-bd70-b36d1fd3f99b" />
+
+---
+
 ## 📋 Proposed Methodology Workflow
 
 The design and verification flow follows a structured modular approach[cite: 2]:
